@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Alireza Nickooie</title>
@@ -12,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="scripts/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
         .title-card {
@@ -90,20 +94,38 @@
             font-family: 'Helvetica Neue LT Pro', sans-serif;
         }
 
-            .navbar li a, .navbar .navbar-brand {
-                color: #fff !important;
-                /*background-color: #05668D;*/
-            }
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+            /*background-color: #05668D;*/
+        }
 
-        .navbar-nav li a:hover, .navbar-nav li.active a {
+        .navbar-nav li a:hover{
+            color: #028090 !important;
+            background-color: #fff !important;
+            border-bottom-color: black;
+            border: 2px;
+        } 
+
+        .navbar-nav li.active a{
             color: #028090 !important;
             background-color: #fff !important;
             border-bottom-color: black;
             border: 2px;
         }
+
+        .dropdown-menu li a{
+            color: #fff !important;
+            background-color: #028090 !important;
+
+        }
+        
     </style>
+    
+
 </head>
+
 <body style="background-color:#028090" data-spy="scroll" data-target=".navbar" data-offset="50">
+
 
 
 
@@ -118,29 +140,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="#">Alireza Nickooie</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Alireza Nickooie</a>
-                </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#miniDescription">About</a></li>
                     <li><a href="#About">Education</a></li>
 
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="padding:0">
 
-                            <li><a href="#Isaac"><p style="color:#05668D">Isaac Jones in a Temple</p></a></li>
-                            <li><a href="#FPGA"><p style="color:#05668D">FPGA Brick Breaker</p></a></li>
-                            <li><a href="#Arduino"><p style="color:#05668D">Arduino Escape Room</p></a></li>
-                            <li><a href="#Reddit"><p style="color:#05668D">Reddit Bot</p></a></li>
+                            <li><a href="#Isaac"><p>Isaac Jones in a Temple</p></a></li>
+                            <li><a href="#FPGA"><p>FPGA Brick Breaker</p></a></li>
+                            <li><a href="#Arduino"><p>Arduino Escape Room</p></a></li>
+                            <li><a href="#Reddit"><p>Reddit Bot</p></a></li>
                         </ul>
                     </li>
 
                     <li><a href="#Experience">Experience</a></li>
-                    <li><a href="Alireza Nickooie Resume.pdf">Resume</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
 
 
@@ -153,7 +173,8 @@
 
 
 
-    <div class="container-fluid" id="miniDescription">
+
+    <div  id="miniDescription" class="container-fluid">
         <div class="col-lg-12" id="MyPhoto">
             <img src="images/edited3.jpg" class="img-circle center-block" alt="Cinque Terre" style="width:350px">
             <div class="jumbotron text-center container title-card">
@@ -374,7 +395,7 @@
                                     <a href="images/isaac%20jones%20pics/53a95127d0db42ecc51107c699bb41c3.png">
                                         <img src="images/isaac%20jones%20pics/53a95127d0db42ecc51107c699bb41c3.png" />
                                     </a>
-                                    <div class="caption" style="color: #fff"`>
+                                    <div class="caption" style="color: #fff" `>
                                         <p>Upon death, the player can enter the leader boards and see all the other unfortunate souls that played this game and died</p>
                                     </div>
                                 </div>
@@ -385,7 +406,6 @@
                     </div>
                 </div>
                 <!--<%--Isaac jones end--%>-->
-
                 <!--<%--FPGA brick breaker--%>-->
                 <div class="panel panel-default Projects-panel" id="FPGA">
                     <div class="panel-heading" style="background: rgba(0, 0, 0, 0.2); color: #fff"> <h3>FPGA Brick Breaker (FPGA, Verilog)</h3> </div>
@@ -427,7 +447,6 @@
                     </div>
                 </div>
                 <!--<%--birck breaker end--%>-->
-
                 <!--<%--escape room--%>-->
                 <div class="panel panel-default Projects-panel" id="Arduino">
                     <div class="panel-heading" style="background: rgba(0, 0, 0, 0.2); color: #fff"> <h3>Arduino Escape Room (Arduino, Java, OpenGL)</h3> </div>
@@ -460,7 +479,6 @@
                     </div>
                 </div>
                 <!--<%--escape room end--%>-->
-
                 <!--<%--meme bot--%>-->
                 <div class="panel panel-default Projects-panel" id="Reddit">
                     <div class="panel-heading" style="background: rgba(0, 0, 0, 0.2); color: #fff"> <h3>Reddit Bot (Work in progress) (Python, PRAW, more)</h3> </div>
